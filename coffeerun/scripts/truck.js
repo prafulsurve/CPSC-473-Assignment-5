@@ -26,6 +26,11 @@
     }.bind(this));
   };
 
+  Truck.prototype.createOrderTest = function(order) {
+    this.createOrder(order);
+    return this.db.data;
+  };
+
   App.Truck = Truck;
   window.App = App;
 })(window);
